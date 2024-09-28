@@ -5,6 +5,10 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("i", "fd", "<ESC>", { desc = "Exit insert mode with fd" })
 
+-- Close and save file
+keymap.set("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
+keymap.set("n", "<leader>q", "<cmd>q<CR>", { desc = "Close neovim" })
+
 keymap.set("n", "<leader>h", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- increment/decrement numbers
