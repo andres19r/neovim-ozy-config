@@ -8,6 +8,7 @@ keymap.set("i", "fd", "<ESC>", { desc = "Exit insert mode with fd" })
 -- Close and save file
 keymap.set("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
 keymap.set("n", "<leader>q", "<cmd>q<CR>", { desc = "Close neovim" })
+keymap.set("n", "<leader>Q", "<cmd>qa<CR>", { desc = "Close neovim" })
 
 keymap.set("n", "<leader>h", ":nohl<CR>", { desc = "Clear search highlights" })
 
