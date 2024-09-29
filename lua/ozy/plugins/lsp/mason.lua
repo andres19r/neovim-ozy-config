@@ -37,7 +37,7 @@ return {
         "dockerls",
         "jsonls",
         -- "gopls",
-        -- "jdtls",
+        "jdtls",
         "emmet_ls",
         "prismals",
         "pyright",
