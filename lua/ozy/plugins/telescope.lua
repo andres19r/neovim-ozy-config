@@ -4,6 +4,7 @@ return {
     "nvim-lua/plenary.nvim",
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     "nvim-tree/nvim-web-devicons",
+    "folke/todo-comments.nvim",
   },
   config = function()
     local telescope = require("telescope")
@@ -35,6 +36,6 @@ return {
     keymap.set('n', "<leader>fs", builtin.current_buffer_fuzzy_find, { desc = "Find string in current buffer"})
     keymap.set('n', "<C-p>", function() builtin.find_files({ hidden = true, no_ignore = true }) end, {})
     keymap.set('n', "<leader>fb", builtin.buffers, { desc = "Fuzzy find buffers" })
-
+    keymap.set('n', "<leader>ft", "<cmd>TodoTelescope<CR>", { desc = "Find todos" })
   end,
 }
