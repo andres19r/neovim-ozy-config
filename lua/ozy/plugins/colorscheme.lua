@@ -44,4 +44,19 @@ return {
     lazy = false,
     priority = 1000,
   },
+  {
+    "sainnhe/sonokai",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "navarasu/onedark.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "Shatur/neovim-ayu",
+    lazy = false,
+    priority = 1000,
+  },
 }

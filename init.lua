@@ -1,4 +1,4 @@
 require("ozy.core")
 require("ozy.lazy")
 
-vim.cmd([[colorscheme kanagawa]])
+vim.cmd([[colorscheme ayu-mirage]])
