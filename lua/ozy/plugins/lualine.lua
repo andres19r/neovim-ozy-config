@@ -7,6 +7,17 @@ return {
 
     lualine.setup({
       sections = {
+        lualine_b = {
+          {
+            "filename",
+            -- path = 1
+          },
+        },
+        lualine_c = {
+          "navic",
+          color_correction = nil,
+          navic_opts = nil
+        },
         lualine_x = {
           {
             lazy_status.updates,
