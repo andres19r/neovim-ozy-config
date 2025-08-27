@@ -12,10 +12,13 @@ return {
 		-- Move to previous/next
 		map("n", "<A-h>", "<Cmd>BufferPrevious<CR>", opts)
 		map("n", "<A-l>", "<Cmd>BufferNext<CR>", opts)
+		map("n", "<leader>k", "<Cmd>BufferPrevious<CR>", opts)
+		map("n", "<leader>j", "<Cmd>BufferNext<CR>", opts)
 		-- Re-order to previous/next
 		map("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>", opts)
 		map("n", "<A->>", "<Cmd>BufferMoveNext<CR>", opts)
     map('n', '<leader><tab>', '<Cmd>b#<CR>', opts)
+    map('n', '<leader>bl', '<Cmd>b#<CR>', opts)
 		-- Goto buffer in position...
 		map("n", "<A-1>", "<Cmd>BufferGoto 1<CR>", opts)
 		map("n", "<A-2>", "<Cmd>BufferGoto 2<CR>", opts)
@@ -43,12 +46,12 @@ return {
 		--                 :BufferCloseBuffersLeft
 		--                 :BufferCloseBuffersRight
 		-- Sort automatically by...
-		map("n", "<Space>bb", "<Cmd>BufferOrderByBufferNumber<CR>", opts)
-		map("n", "<Space>bn", "<Cmd>BufferOrderByName<CR>", opts)
-		map("n", "<Space>bd", "<Cmd>BufferOrderByDirectory<CR>", opts)
-		map("n", "<Space>bl", "<Cmd>BufferOrderByLanguage<CR>", opts)
-		map("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", opts)
-		map("n", "<Space>bC", "<Cmd>BufferCloseAllButVisible<CR>", opts)
+		-- map("n", "<Space>bb", "<Cmd>BufferOrderByBufferNumber<CR>", opts)
+		-- map("n", "<Space>bn", "<Cmd>BufferOrderByName<CR>", opts)
+		-- map("n", "<Space>bd", "<Cmd>BufferOrderByDirectory<CR>", opts)
+		-- map("n", "<Space>bl", "<Cmd>BufferOrderByLanguage<CR>", opts)
+		-- map("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", opts)
+		-- map("n", "<Space>bC", "<Cmd>BufferCloseAllButVisible<CR>", opts)
 
 		-- Other:
 		-- :BarbarEnable - enables barbar (enabled by default)

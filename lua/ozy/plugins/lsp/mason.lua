@@ -36,7 +36,7 @@ return {
         "docker_compose_language_service",
         "dockerls",
         "jsonls",
-        -- "gopls",
+        "gopls",
         "jdtls",
         "emmet_ls",
         "prismals",
