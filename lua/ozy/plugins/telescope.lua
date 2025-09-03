@@ -9,6 +9,7 @@ return {
   config = function()
     local telescope = require("telescope")
     local actions = require("telescope.actions")
+    local actions_layout = require("telescope.actions.layout")
 
     telescope.setup({
       defaults = {
@@ -17,8 +18,34 @@ return {
           i = {
             ["<C-k>"] = actions.move_selection_previous,
             ["<C-j>"] = actions.move_selection_next,
+            ["<esc>"] = actions.close,
+            ["<C-f>"] = actions_layout.toggle_preview,
             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
           },
+        },
+      },
+      pickers = {
+        find_files = {
+          theme = "ivy",
+          previewer = false
+        },
+        git_files = {
+          theme = "ivy",
+          previewer = false
+        },
+        live_grep = {
+          theme = "ivy",
+        },
+        grep_string = {
+          theme = "ivy",
+        },
+        current_buffer_fuzzy_find = {
+          theme = "ivy",
+          previewer = false
+        },
+        oldfiles = {
+          theme = "ivy",
+          previewer = false
         },
       }
     })
